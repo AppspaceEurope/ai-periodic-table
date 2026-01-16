@@ -1,0 +1,10 @@
+{
+  "title": "Media Library (Digital Signage)",
+  "description": "AI-powered image generation specifically designed for digital signage content creation.",
+  "longDescription": "The Media Library feature for Digital Signage allows users to generate images directly within the media library interface. Users can access a dropdown menu to use the 'Generate Media' option, which creates images optimized for digital signage displays. This feature streamlines the content creation workflow by eliminating the need to source external images, enabling quick generation of visual content tailored for digital signage use cases.",
+  "elements": ["Mm", "Sy"],
+  "productAreas": ["Digital Signage"],
+  "productAreaDetails": {
+    "Digital Signage": "In Digital Signage, the Media Library AI generation feature enables content creators to quickly produce images for display screens. Users can generate media directly within the library, ensuring all content is optimized for digital signage formats. This eliminates the need for external image sourcing and editing tools, streamlining the content creation process and ensuring consistent quality and formatting for digital displays."
+  }
+}

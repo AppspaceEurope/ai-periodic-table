@@ -1,0 +1,11 @@
+{
+  "title": "Search Assistant",
+  "description": "Conversational search assistant that answers questions, summarizes content, and helps users find information through natural dialogue.",
+  "longDescription": "Search Assistant is a conversational framework built on top of Global Search that provides an interactive, dialogue-based search experience. Unlike Global Search which focuses on finding content, Search Assistant can answer questions based on content it discovers, summarize content (such as 'what's the latest on this community'), and help users find content when they're struggling with native search. The assistant uses a conversational interface that can ask clarifying questions to better understand user intent and help them discover the information they need.",
+  "elements": ["Pr", "Lg", "Rg", "Ag", "Fc"],
+  "productAreas": ["Employee Comms", "Integration such as Copilot"],
+  "productAreaDetails": {
+    "Employee Comms": "Search Assistant provides employees with a natural, conversational way to find information and get answers. Instead of crafting precise search queries, employees can ask questions in natural language and receive answers based on content within the platform. The assistant can summarize community updates, help locate specific information, and guide users through clarifying questions when their initial query needs refinement. This makes information discovery more accessible and user-friendly.",
+    "Integration such as Copilot": "Search Assistant serves as a key component of Copilot integrations, providing the conversational interface and intelligent search capabilities that enable Copilot to answer questions and help users find information. The assistant's ability to understand context, ask clarifying questions, and provide summaries makes it an essential part of the Copilot experience, allowing users to interact with AppSpace content through natural conversation."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Sharebox (Generative AI)",
+  "description": "AI-powered content creation for short-form posts including polls, praises, events, questions, and user posts.",
+  "longDescription": "Sharebox enables users to leverage generative AI for creating short-form content within the AppSpace platform. Users can generate text from scratch by asking AI to write content, or select existing text and ask AI to rewrite it in different styles (such as informal). The feature also supports AI-generated media creation directly within the sharebox interface. Sharebox is specifically designed for creating polls, praises, events, questions, and short user posts, making it distinct from long-form content creation features.",
+  "elements": ["Pr", "Lg", "Mm"],
+  "productAreas": ["Employee Comms"],
+  "productAreaDetails": {
+    "Employee Comms": "In Employee Comms, Sharebox Generative AI empowers employees to quickly create engaging short-form content. Users can generate text for posts, rewrite existing content in different tones, and create media to accompany their messages. This feature streamlines content creation for polls, event announcements, recognition posts (praises), questions, and general user posts, making internal communication more efficient and engaging."
+  }
+}

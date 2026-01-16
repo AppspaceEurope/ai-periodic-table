@@ -1,0 +1,10 @@
+{
+  "title": "Pages and Stories (Generative AI)",
+  "description": "Long-form content creation with comprehensive AI assistance including writing, media generation, translation, and audio creation.",
+  "longDescription": "Pages and Stories provides AI-powered long-form content creation capabilities distinct from Sharebox's short-form approach. Users can ask AI to write content, generate media for banners and illustrations, and create multi-block content layouts with images side by side with text. The feature includes translation capabilities for pages/stories into multiple languages, as well as UI element translation. Additionally, it can generate tags based on content insights, create summaries (TLDR), generate captions for news feeds, and produce audio versions of any page or story. A planned enhancement will enable complete page generation using the new assistant framework with tool capabilities, allowing connections to external systems.",
+  "elements": ["Pr", "Lg", "Mm", "Sy"],
+  "productAreas": ["Employee Comms"],
+  "productAreaDetails": {
+    "Employee Comms": "Pages and Stories Generative AI enables employees to create comprehensive long-form content including knowledge base articles, event stories, and detailed communications. The AI assists with content writing, generates visual media for banners and illustrations, translates content into multiple languages, and creates audio versions for accessibility. Features like tag generation, summaries, and captions help improve content discoverability and engagement. The multi-block content system allows for rich layouts combining text and images, making it ideal for detailed communications, knowledge sharing, and storytelling within the organization."
+  }
+}

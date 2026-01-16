@@ -1,0 +1,14 @@
+{
+  "features": [
+    "sharebox-generative-ai.json",
+    "pages-stories-generative-ai.json",
+    "media-library-digital-signage.json",
+    "cards-digital-signage.json",
+    "newsletter.json",
+    "audio-digest.json",
+    "global-search.json",
+    "search-assistant.json",
+    "insight-assistant.json",
+    "custom-assistants.json"
+  ]
+}

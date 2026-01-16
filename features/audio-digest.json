@@ -1,0 +1,10 @@
+{
+  "title": "Audio Digest",
+  "description": "Audio digest of newsfeed content allowing users to listen to content they may have missed or need to catch up on.",
+  "longDescription": "Audio Digest is a homepage feature that provides an audio version of newsfeed content. Unlike the standard newsfeed which shows new content, Audio Digest specifically focuses on content that users have not yet viewed, creating a personalized catch-up experience. Users can listen to audio versions of content they may have missed, making it easier to stay informed while multitasking or when visual reading isn't convenient.",
+  "elements": ["Lg", "Sy"],
+  "productAreas": ["Employee Comms"],
+  "productAreaDetails": {
+    "Employee Comms": "Audio Digest enhances employee communication accessibility by providing audio versions of newsfeed content. This feature helps employees catch up on content they haven't viewed, supporting different learning styles and enabling content consumption while multitasking. The audio format makes information accessible during commutes, breaks, or other situations where reading isn't practical, ensuring employees stay informed and engaged with organizational communications."
+  }
+}

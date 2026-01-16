@@ -1,0 +1,10 @@
+{
+  "title": "Newsletter",
+  "description": "AI-powered newsletter creation with generated images and media for engaging email communications.",
+  "longDescription": "Newsletter is a feature within the AppSpace console that enables users to create engaging email newsletters with AI assistance. The feature allows generation of images and media specifically tailored for newsletter content, helping create visually appealing and professional email communications. This streamlines the newsletter creation process by providing AI-generated visual content that complements written material.",
+  "elements": ["Pr", "Lg", "Mm"],
+  "productAreas": ["Employee Comms"],
+  "productAreaDetails": {
+    "Employee Comms": "Newsletter AI feature empowers organizations to create engaging email newsletters efficiently. Users can leverage AI to generate images and media that enhance newsletter content, making internal communications more visually appealing and professional. This feature reduces the time and resources needed to source and create visual content for newsletters, enabling more frequent and consistent employee communications via email."
+  }
+}

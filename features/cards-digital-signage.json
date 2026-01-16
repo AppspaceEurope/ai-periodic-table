@@ -1,0 +1,10 @@
+{
+  "title": "Cards (Digital Signage)",
+  "description": "AI-assisted card generation for digital signage with featured media, logos, headlines, and summaries.",
+  "longDescription": "Cards for Digital Signage leverages AI to help generate complete card content for digital displays. The feature can generate featured media, logos, headlines, and summaries within cards. It enables creation of fully responsive HTML content optimized specifically for digital signage, ensuring content displays correctly across different screen sizes and orientations. The AI assistance streamlines the card creation process while maintaining professional quality and proper formatting for digital signage environments.",
+  "elements": ["Pr", "Lg", "Mm"],
+  "productAreas": ["Digital Signage"],
+  "productAreaDetails": {
+    "Digital Signage": "Cards Digital Signage AI feature allows content creators to quickly generate complete card layouts for digital displays. The AI assists in creating all card components including featured media, logos, headlines, and summaries, ensuring cohesive and professional-looking content. The generated HTML content is fully responsive and optimized for digital signage, automatically adapting to different screen sizes and display configurations. This feature significantly reduces the time and effort required to create engaging card-based content for digital signage networks."
+  }
+}

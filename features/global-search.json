@@ -1,0 +1,11 @@
+{
+  "title": "Global Search",
+  "description": "Semantic search engine using embeddings and vector database for contextual content discovery across the platform.",
+  "longDescription": "Global Search leverages the insights engine and uses embeddings to create a powerful semantic search capability. All content types including pages, user posts, and user bios are processed into embeddings and stored in a vector database. The search engine uses contextual understanding and semantic relationships to find content based on meaning rather than exact keyword matches. For example, searching for 'cat' in English will find French documents about cats due to semantic relationships between languages. This enables users to discover relevant content even when using different terminology or languages than the original content creators.",
+  "elements": ["Em", "Vx", "Rg"],
+  "productAreas": ["Employee Comms", "Integration such as Copilot"],
+  "productAreaDetails": {
+    "Employee Comms": "Global Search transforms how employees discover information within AppSpace. By using semantic relationships and embeddings, employees can find relevant content even when using different words or languages than the original content. This makes knowledge discovery more intuitive and efficient, helping employees find the information they need regardless of how it was originally written or what language it's in.",
+    "Integration such as Copilot": "Global Search provides the foundational semantic search capabilities that power Copilot integrations. The embedding-based vector search enables Copilot to understand context and find relevant information across the platform, supporting intelligent responses and content recommendations. This semantic understanding is crucial for Copilot to provide accurate and contextually relevant assistance to users."
+  }
+}

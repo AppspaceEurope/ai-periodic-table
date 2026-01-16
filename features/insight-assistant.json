@@ -1,0 +1,11 @@
+{
+  "title": "Insight Assistant",
+  "description": "Advanced analytics assistant with tools for querying insights and analytics across all AppSpace platform areas.",
+  "longDescription": "Insight Assistant is a recently released advanced assistant feature that allows users to ask questions about analytics and insights based on their current location in the console. When viewing spaces and insights, users can see analytics for posts, engagements, view trends, and top content. Insight Assistant enables users to perform complex queries such as comparing metrics (A-B testing), searching for active users from last month, showing engagement trends, or displaying top content for specific time periods. This is the most advanced assistant in the platform, running tools that create and execute queries against analytics. It works across space reservations analytics, visitor management analytics, and employee comms analytics, providing comprehensive insights across the entire AppSpace platform.",
+  "elements": ["Pr", "Lg", "Ag", "Fc", "Fw", "In"],
+  "productAreas": ["Employee Comms", "Space Reservation and Visitor Management"],
+  "productAreaDetails": {
+    "Employee Comms": "Insight Assistant transforms analytics exploration for employee communications. Users can ask natural language questions about engagement metrics, content performance, user activity, and trends. The assistant can perform complex analyses like comparing engagement rates, identifying top-performing content, tracking user activity over time, and providing insights into communication effectiveness. This makes analytics accessible to users without requiring deep technical knowledge of query construction or data analysis.",
+    "Space Reservation and Visitor Management": "Insight Assistant extends its powerful analytics capabilities to space reservations and visitor management. Users can query analytics about room usage patterns, reservation trends, visitor frequency, peak usage times, and other space-related metrics. The assistant can help identify optimization opportunities, understand usage patterns, and make data-driven decisions about space management and visitor policies. This provides comprehensive insights that help organizations optimize their physical space utilization and visitor experiences."
+  }
+}

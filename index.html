@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appspace Intelligence Elementals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Appspace Intelligence Elementals</h1>
+        <div class="header-buttons">
+            <button id="game-mode-toggle" class="game-mode-toggle" aria-label="Start game mode">🎮 Game Mode</button>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Toggle Button -->
+        <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle sidebar">
+            <span class="toggle-icon">☰</span>
+        </button>
+        
+        <!-- Left Sidebar: Features List -->
+        <aside class="sidebar collapsed" id="sidebar">
+            <div class="resize-handle" id="resize-handle"></div>
+            <div class="filters-section">
+                <div class="expandable-section">
+                    <button class="expandable-header" id="filters-header">
+                        <span>Filter by Product Area</span>
+                        <span class="expand-icon">▼</span>
+                    </button>
+                    <div class="expandable-content">
+                        <div class="filter-checkboxes">
+                            <label>
+                                <input type="checkbox" value="Digital Signage" class="filter-checkbox">
+                                Digital Signage
+                            </label>
+                            <label>
+                                <input type="checkbox" value="Employee Comms" class="filter-checkbox">
+                                Employee Comms
+                            </label>
+                            <label>
+                                <input type="checkbox" value="Space Reservation and Visitor Management" class="filter-checkbox">
+                                Space Reservation and Visitor Management
+                            </label>
+                            <label>
+                                <input type="checkbox" value="Integration such as Copilot" class="filter-checkbox">
+                                Integration such as Copilot
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-section">
+                <h2>Appspace Features</h2>
+                <div id="features-list" class="features-list">
+                    <!-- Features will be dynamically loaded here -->
+                </div>
+            </div>
+
+            <div id="feature-details" class="feature-details hidden">
+                <div class="feature-details-header">
+                    <h3 id="feature-details-title"></h3>
+                    <button class="feature-details-close" id="feature-details-close" aria-label="Close feature details">×</button>
+                </div>
+                <p id="feature-details-description"></p>
+                <div id="feature-details-areas" class="feature-areas-details"></div>
+            </div>
+        </aside>
+
+        <!-- Right Section: Periodic Table -->
+        <section class="periodic-table-section">
+            <!-- Game Mode Panel (appears above table when game mode is active) -->
+            <div id="game-mode-panel" class="game-mode-panel hidden">
+                <div class="game-mode-header">
+                    <div class="game-info">
+                        <div class="game-timer" id="game-timer">04:00</div>
+                        <div class="game-score" id="game-score">Score: 0</div>
+                        <div class="game-question-counter" id="game-question-counter">Question 1 of 5</div>
+                    </div>
+                    <button id="game-exit" class="game-exit-button" aria-label="Exit game mode">×</button>
+                </div>
+                <div class="game-question" id="game-question">
+                    <!-- Question text will be inserted here -->
+                </div>
+                <div class="game-submit-container">
+                    <button id="game-submit" class="game-submit-button hidden" aria-label="Submit answer">Submit Answer</button>
+                </div>
+            </div>
+            
+            <div class="periodic-table-container">
+                <table class="periodic-table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th class="column-header clickable" data-column="1">C1<br><span class="group-name">REACTIVE</span></th>
+                            <th class="column-header clickable" data-column="2">C2<br><span class="group-name">RETRIEVAL</span></th>
+                            <th class="column-header clickable" data-column="3">C3<br><span class="group-name">ORCHES.</span></th>
+                            <th class="column-header clickable" data-column="4">C4<br><span class="group-name">VALID.</span></th>
+                            <th class="column-header clickable" data-column="5">C5<br><span class="group-name">MODELS</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="row-header clickable" data-row="primitives">R1<br><span class="row-name">PRIMITIVES</span></th>
+                            <td class="element-cell" data-element="Pr">
+                                <span class="element-abbr">Pr</span>
+                                <span class="element-name">Prompts</span>
+                            </td>
+                            <td class="element-cell" data-element="Em">
+                                <span class="element-abbr">Em</span>
+                                <span class="element-name">Embeddings</span>
+                            </td>
+                            <td class="element-cell empty"></td>
+                            <td class="element-cell empty"></td>
+                            <td class="element-cell" data-element="Lg">
+                                <span class="element-abbr">Lg</span>
+                                <span class="element-name">LLM</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="row-header clickable" data-row="compositions">R2<br><span class="row-name">COMPOSITIONS</span></th>
+                            <td class="element-cell" data-element="Fc">
+                                <span class="element-abbr">Fc</span>
+                                <span class="element-name">Function call</span>
+                            </td>
+                            <td class="element-cell" data-element="Vx">
+                                <span class="element-abbr">Vx</span>
+                                <span class="element-name">Vector</span>
+                            </td>
+                            <td class="element-cell" data-element="Rg">
+                                <span class="element-abbr">Rg</span>
+                                <span class="element-name">RAG</span>
+                            </td>
+                            <td class="element-cell" data-element="Gr">
+                                <span class="element-abbr">Gr</span>
+                                <span class="element-name">Guardrails</span>
+                            </td>
+                            <td class="element-cell" data-element="Mm">
+                                <span class="element-abbr">Mm</span>
+                                <span class="element-name">Multimodal</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="row-header clickable" data-row="deployment">R3<br><span class="row-name">DEPLOYMENT</span></th>
+                            <td class="element-cell" data-element="Ag">
+                                <span class="element-abbr">Ag</span>
+                                <span class="element-name">Agent</span>
+                            </td>
+                            <td class="element-cell" data-element="Ft">
+                                <span class="element-abbr">Ft</span>
+                                <span class="element-name">Finetune</span>
+                            </td>
+                            <td class="element-cell" data-element="Fw">
+                                <span class="element-abbr">Fw</span>
+                                <span class="element-name">Framework</span>
+                            </td>
+                            <td class="element-cell" data-element="Re">
+                                <span class="element-abbr">Re</span>
+                                <span class="element-name">Red-team</span>
+                            </td>
+                            <td class="element-cell" data-element="Sm">
+                                <span class="element-abbr">Sm</span>
+                                <span class="element-name">Small</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="row-header clickable" data-row="emerging">R4<br><span class="row-name">EMERGING</span></th>
+                            <td class="element-cell" data-element="Ma">
+                                <span class="element-abbr">Ma</span>
+                                <span class="element-name">Multi-agent</span>
+                            </td>
+                            <td class="element-cell" data-element="Sy">
+                                <span class="element-abbr">Sy</span>
+                                <span class="element-name">Synthetic</span>
+                            </td>
+                            <td class="element-cell" data-element="Mc">
+                                <span class="element-abbr">Mc</span>
+                                <span class="element-name">MCP</span>
+                            </td>
+                            <td class="element-cell" data-element="In">
+                                <span class="element-abbr">In</span>
+                                <span class="element-name">Interpret.</span>
+                            </td>
+                            <td class="element-cell" data-element="Th">
+                                <span class="element-abbr">Th</span>
+                                <span class="element-name">Thinking</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Element Description Panel at Bottom -->
+    <div id="element-description" class="element-description hidden">
+        <button id="element-description-close" class="element-description-close" aria-label="Close element description">×</button>
+        <h3 id="element-description-title"></h3>
+        <p id="element-description-text"></p>
+    </div>
+
+    <!-- Game Results Screen (overlay for results only) -->
+    <div id="game-results" class="game-results hidden">
+        <div class="game-results-content">
+            <h2>Game Complete!</h2>
+            <div class="final-score" id="final-score">Final Score: 0</div>
+            <div class="game-results-buttons">
+                <button id="game-play-again" class="game-button">Play Again</button>
+                <button id="game-exit-results" class="game-button">Exit</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
