@@ -401,16 +401,18 @@ function updateAllHighlights() {
         cell.classList.remove('highlighted', 'highlighted-shift', 'highlighted-red', 'feature-highlighted');
     });
 
-    // Apply feature highlights (base highlight for feature elements)
+    // Apply feature highlights (use same styling as manual selection)
     if (selectedFeature && selectedFeature.elements) {
         selectedFeature.elements.forEach(abbr => {
             const cell = document.querySelector(`[data-element="${abbr}"]`);
             if (cell) {
                 // Only add feature highlight if not individually selected
+                // Manually selected elements should not get feature highlights
                 if (!selectedElements.has(abbr) && 
                     !selectedElementsOrange.has(abbr) && 
                     !selectedElementsRed.has(abbr)) {
-                    cell.classList.add('feature-highlighted');
+                    // Use the same 'highlighted' class as manual selection
+                    cell.classList.add('highlighted');
                 }
             }
         });
